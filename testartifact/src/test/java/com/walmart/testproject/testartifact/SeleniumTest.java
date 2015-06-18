@@ -19,7 +19,7 @@ public class SeleniumTest {
 	@BeforeClass
 	public static void initializeWebDriver()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\Walmart\\TestRail\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
 		driver = new  ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
