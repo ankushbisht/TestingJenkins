@@ -49,7 +49,7 @@ public class SeleniumTest {
 				Map result1 = new HashMap();
 				result1.put("status_id", new Integer(1));
 				result1.put("comment", "This test is successful!");
-				JSONObject post1 = (JSONObject) client.sendPost("add_result_for_case/3/1", result1);
+				JSONObject post1 = (JSONObject) client.sendPost("add_result_for_case/3/3", result1);
 				
 				}
 				catch(Exception e)
@@ -83,8 +83,5 @@ public class SeleniumTest {
 	public static void closeBrowser()
 	{
 		driver.quit();
-		
-
-		
 	}
 }
