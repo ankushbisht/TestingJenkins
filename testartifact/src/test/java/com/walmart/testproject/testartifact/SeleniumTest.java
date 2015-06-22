@@ -82,6 +82,8 @@ public class SeleniumTest {
 	@AfterClass
 	public static void closeBrowser()
 	{
+		System.out.println("Closing browser");
 		driver.quit();
+		
 	}
 }
